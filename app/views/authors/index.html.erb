@@ -13,7 +13,7 @@
   </thead>
 
   <tbody>
-    <% @authors.each do |author| %>
+    <% @authors.alphabetical.each do |author| %>
       <tr>
         <td><%= author.first_name %></td>
         <td><%= author.last_name %></td>
