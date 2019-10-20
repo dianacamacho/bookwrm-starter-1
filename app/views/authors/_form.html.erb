@@ -12,21 +12,21 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :first_name %>
+    <%= form.label :first_name %><br />
     <%= form.text_field :first_name %>
   </div>
 
   <div class="field">
-    <%= form.label :last_name %>
+    <%= form.label :last_name %><br />
     <%= form.text_field :last_name %>
   </div>
 
   <div class="field">
-    <%= form.label :bio %>
-    <%= form.text_area :bio %>
+    <%= form.label :bio %><br />
+    <%= form.text_field :bio %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class: 'button-primary' %>
   </div>
 <% end %>

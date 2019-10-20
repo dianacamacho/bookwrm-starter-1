@@ -1,19 +1,15 @@
-<p id="notice"><%= notice %></p>
+<header class="page-header">
+  <div class="header-block-container">
+    <h1><%= @author.first_name %> <%= @author.last_name %></h1>
+    <% if current_user.present? %>
+      <%= link_to 'Edit', edit_author_path(@author), class: 'button-white-outline' %>
+    <% end %>
+  </div>
+</header>
 
-<p>
-  <strong>First name:</strong>
-  <%= @author.first_name %>
-</p>
-
-<p>
-  <strong>Last name:</strong>
-  <%= @author.last_name %>
-</p>
-
-<p>
-  <strong>Bio:</strong>
-  <%= @author.bio %>
-</p>
-
-<%= link_to 'Edit', edit_author_path(@author) %> |
-<%= link_to 'Back', authors_path %>
+<section class="book-block-container">
+  <div>
+    <h5>Biography</h5>
+    <p><%= @author.bio %></p>
+  </div>
+</section>
